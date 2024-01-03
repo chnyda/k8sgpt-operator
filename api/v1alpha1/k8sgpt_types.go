@@ -80,7 +80,7 @@ type AISpec struct {
 	Secret  *SecretRef `json:"secret,omitempty"`
 	Enabled bool       `json:"enabled,omitempty"`
 	// +kubebuilder:default:=true
-	Anonymize bool `json:"anonymized,omitempty"`
+	Anonymize bool `json:"anonymized"`
 	// +kubebuilder:default:=english
 	Language string `json:"language,omitempty"`
 }
